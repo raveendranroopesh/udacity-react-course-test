@@ -45,7 +45,7 @@ export default function App() {
         <button
           type="button"
           className="btn"
-          onClick={() => setTheme((t) => (t === "dark" ? "Light" : "Dark"))}
+          onClick={() => setTheme((t) => (t === "dark" ? "light" : "dark"))}
         >
           Toggle theme
         </button>
