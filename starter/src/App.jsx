@@ -2,8 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 
 function readTheme() {
   const saved = localStorage.getItem("theme");
-  if (saved === "dark" || saved === "light") return saved;
-  return "light";
+  if (saved === "Dark" || saved === "Light") return saved;
+  return "Light";
 }
 
 function applyTheme(theme) {
@@ -45,7 +45,7 @@ export default function App() {
         <button
           type="button"
           className="btn"
-          onClick={() => setTheme((t) => (t === "dark" ? "light" : "dark"))}
+          onClick={() => setTheme((t) => (t === "Dark" ? "Light" : "Dark"))}
         >
           Toggle theme
         </button>
